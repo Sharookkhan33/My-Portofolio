@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
+@import "tailwindcss";
+
+
+/* Animated Hamburger Button */
+.hamburger {
+  width: 40px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #000;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+/* When active → turn into X */
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(6px, 8px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(6px, -9px); }
