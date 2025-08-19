@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Bazario - MultiVendor Marketplace",
     desc: "Bazario is a full-featured e-commerce marketplace where multiple vendors can list products, manage orders, and track sales. It includes three roles: Admin (manages vendors & users), Vendor (manages their own products & orders), and User (shops with cart & payment). Features product search, secure authentication, real-time order tracking, and scalable backend using the MERN stack.",
-    img: "public/assets/Screenshot 2025-08-17 193326.png",
+    img: "https://res.cloudinary.com/dujealnld/image/upload/v1755579139/Screenshot_2025-08-17_193326_fqqnnw.png",
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "Bootstrap", "Tailwind"],
     link: "https://github.com/Sharookkhan33/Bazario.git",
     date: "01 / May , 2025",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "E-Commerce Platform",
     desc: "An E commerce platform,user can view and addd to cart and checkout the product. Features authentication, markdown support, and REST API backend.",
-    img: "public/assets/Screenshot 2025-08-17 194238.png",
+    img: "https://res.cloudinary.com/dujealnld/image/upload/v1755579142/Screenshot_2025-08-17_194238_wyaoif.png",
     tech: [  "React", "Node.js","JWT", "Bootstrap","Express", "MongoDB"],
     link: "https://github.com/Sharookkhan33/E-commerce1.gitm",
     date: "01 / Mar , 2025",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Trendy Cart- E-Commerce",
     desc: "a nice ui for an e commerce platform based on frontend only, features Cart and Navbar and categorised products",
-    img: "public/assets/Screenshot 2025-08-17 200401.png",
+    img: "https://res.cloudinary.com/dujealnld/image/upload/v1755579149/Screenshot_2025-08-17_200401_wtfcyx.png",
     tech: ["React", "Node.js", "Bootstrap"],
     link: "https://github.com/Sharookkhan33/E-commerce-App.git",
     date: "01 / Jan , 2025",
@@ -31,10 +31,10 @@ const projects = [
    {
     title: "Portfolio Website",
     desc: "A personal portfolio built with React, Tailwind CSS, and Framer Motion. It showcases my skills, projects, and services in a modern and responsive design.",
-    img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
+    img: "https://res.cloudinary.com/dujealnld/image/upload/v1755579459/Screenshot_2025-08-19_102711_omndkm.png",
     tech: ["React", "Tailwind", "Framer Motion"],
     link: "https://github.com/yourgithub/portfolio",
-    date: "2023",
+    date: "10 / Aug ,2025",
   }
 ];
 

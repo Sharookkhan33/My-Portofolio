@@ -32,7 +32,7 @@ const Navbar = () => {
   className="text-xl sm:text-2xl font-extrabold font-montserrat tracking-wide whitespace-nowrap overflow-hidden text-ellipsis"
 >
   <img
-  src="public\assets\Screenshot 2025-08-17 215201.png"
+  src="https://res.cloudinary.com/dujealnld/image/upload/v1755579150/Screenshot_2025-08-17_215201_mc7bhf.png"
   alt="logo"
   className="w-18 h-auto sm:w-20"  // smaller on mobile, bigger on desktop
 />

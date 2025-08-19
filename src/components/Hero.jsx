@@ -55,7 +55,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <img
-            src="/me.png" // replace with your image in public folder
+            src="https://res.cloudinary.com/dujealnld/image/upload/v1755579627/photo_2024-11-10_20-38-07_ro0oni.jpg" // replace with your image in public folder
             alt="Sharook Khan"
             className="w-56 h-56 md:w-96 md:h-96 object-cover rounded-full shadow-2xl"
           />
