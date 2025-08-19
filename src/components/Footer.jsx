@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Logo + Name */}
         <div className="flex items-center space-x-3">
           {/* Replace this with your actual logo */}
-         <img src="src\assets\Screenshot 2025-08-17 215201.png" alt="logo"  width="105" height="35" />
+         <img src="public\assets\Screenshot 2025-08-17 215201.png" alt="logo"  width="105" height="35" />
           
         </div>
 

@@ -1,5 +1,4 @@
-// src/components/Skills.jsx
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,6 +22,12 @@ const skills = [
 ];
 
 const Skills = () => {
+  const [flipped, setFlipped] = useState({});
+
+  const toggleFlip = (name) => {
+    setFlipped((prev) => ({ ...prev, [name]: !prev[name] }));
+  };
+
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
@@ -44,15 +49,21 @@ const Skills = () => {
         >
           {skills.map((skill) => (
             <SwiperSlide key={skill.name}>
-              <div className="group [perspective:1000px] w-full h-48">
-                <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  
+              <div
+                className="group [perspective:1000px] w-full h-48 cursor-pointer"
+                onClick={() => toggleFlip(skill.name)} // flip on tap/click
+              >
+                <div
+                  className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] ${
+                    flipped[skill.name] ? "[transform:rotateY(180deg)]" : "group-hover:[transform:rotateY(180deg)]"
+                  }`}
+                >
                   {/* Front */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-white border rounded-xl shadow-lg text-lg font-bold text-gray-800 [backface-visibility:hidden]">
                     {skill.icon}
                     <span className="mt-2">{skill.name}</span>
                   </div>
-                  
+
                   {/* Back */}
                   <div className="absolute inset-0 flex items-center justify-center bg-indigo-600 text-white rounded-xl p-4 text-sm [transform:rotateY(180deg)] [backface-visibility:hidden]">
                     {skill.desc}

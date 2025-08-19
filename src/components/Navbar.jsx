@@ -31,7 +31,12 @@ const Navbar = () => {
   href="#hero"
   className="text-xl sm:text-2xl font-extrabold font-montserrat tracking-wide whitespace-nowrap overflow-hidden text-ellipsis"
 >
-  <img src="src\assets\Screenshot 2025-08-17 215201.png" alt="logo"  width="105" height="35" />
+  <img
+  src="public\assets\Screenshot 2025-08-17 215201.png"
+  alt="logo"
+  className="w-18 h-auto sm:w-20"  // smaller on mobile, bigger on desktop
+/>
+
 </a>
 
         {/* Desktop menu */}
